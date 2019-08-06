@@ -37,7 +37,7 @@ class Main extends pluginBase implements Listener{
 			"名前だけで送信する"=>false,
 			"サーバー開放"=>"サーバーを開放しました",
 			"サーバー閉鎖"=>"サーバーを閉鎖しました"
-		]
+		]);
 		$this->getSender()->Send($this->config->get("サーバー開放"));
 	}
 	
