@@ -1,0 +1,11 @@
+name: DiscordChat
+main: pawarenessc\dc\Main
+version: 0.0.1
+api: [3.0.0,4.0.0]
+load: POSTWORLD
+author: PawarenessC
+description: サーバーのチャットをチャンネルに送信
+commands: 
+  cmd: 
+    description: "説明"
+    usage: "/cmd"
