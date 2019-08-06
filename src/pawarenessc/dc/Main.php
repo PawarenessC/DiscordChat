@@ -31,7 +31,13 @@ class Main extends pluginBase implements Listener{
  		$this->getLogger()->info("=========================");
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 		
-		$this->config = new Config( $this->getDataFolder() . "Config.yml", Config::YAML);
+		$this->config = new Config( $this->getDataFolder() . "Config.yml", Config::YAML,
+		[
+			"URL"=>"",
+			"名前だけで送信する"=>false,
+			"サーバー開放"=>"サーバーを開放しました",
+			"サーバー閉鎖"=>"サーバーを閉鎖しました"
+		]
 		$this->getSender()->Send($this->config->get("サーバー開放"));
 	}
 	
